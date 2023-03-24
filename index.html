@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+<div style="margin:100px">
+    <h1><u>Implementation Questions</u></h1>
+    <br>
+    <br>
+
+    <p style="font-size:larger">
+        <h3>1. Explain <span>&lt;</span>br<span>/</span><span>&gt;</span> tags?</h3>
+        <br>
+        <span style="color:blue">
+        The <span>&lt;</span>br<span>&gt;</span> tag in HTML documents is used to create a line break in a text. It is an<br>
+        empty tag which means it does not need an end tag like <span>&lt;</span>/br<span>&gt;</span>.
+        <br>
+        <br>
+        It is genrally used in poems and addresses where the division of line is<br>
+        necessary.
+        </span>
+        <br>
+        <br>
+        <span style="color:red">***********************************************************************************************</span>
+    </p>
+</div>
+
+
+
+
+<div style="margin:100px">
+
+<p style="font-size:larger">
+        <h3>2.How many different types of list we have in HTML?</h3>
+        <br>
+    <span style="color:blue">
+        We have three different types of list in HTML. those are ordered list, unordered list and descriptive list<br>
+        <br>
+        In HTML, we can create an ordered list using the <span>&lt;</span>ol<span>&gt;</span>  tag. The <span>&lt;</span>ol<span>&gt;</span> in the tag stands for an ordered list.<br>
+        Inside each of the ordered list elements <span>&lt;</span>ol<span>&gt;</span> and <span>&lt;</span>/ol<span>&gt;</span>, we have to define the list items. We can define the list<br>
+        items using the li tag.<br>
+        <br>
+        Here is the complete HTML structure for an ordered list:<br>
+        <img src="./ol.png" ><br>
+        <br>
+        You can order the list using A, B, C letters by passing A as the type value.<br>
+        <img src="./A.png"<br>
+        <br>
+        Similarly, you can use lower case letters like a as the type value to list the elements with a, b, c, and so on.<br>
+        <img src="./aa.png"><br>
+        <br>
+        If you want to use Roman numerals, use the value I for an ordered list with Roman numerals:<br>
+        <img src="./roman.png"><br>
+        <br>
+        <br>
+        <br>
+        <span>&lt;</span>ul<span>&gt;</span>tag to create an unordered list. As usual, we need to use the <span>&lt;</span>li<span>&gt;</span> <br>
+        tags within <span>&lt;</span>ul<span>&gt;</span> and <span>&lt;</span>/ul<span>&gt;</span> to create the list items.<br>
+        <br>
+        The list items (li) inside the unordered list (ul) come with the default style of bullet points – so each of the list items is preceded by a black dot.<br>
+        syntax:<br>
+        <img src="./ul.png"><br>
+        <br>
+        <br>
+        There are four main values of the list-style property:<br>
+        <img src="./uul.png"><br>
+        <br>
+        <br>
+        <br>
+        We can define a description list using the <span>&lt;</span>dl<span>&gt;</span> tag element.<br>
+        Inside the <span>&lt;</span>dl<span>&gt;</span>..<span>&lt;</span>/dl<span>&gt;</span> we need to define <br>
+        a description term using the <span>&lt;</span>dt<span>&gt;</span> tag. The term is usually some small text about something.<br>
+        Then, we can define the description descriptor to describe the term further using the <span>&lt;</span>dd<span>&gt;</span> tag.<br>
+        <br>
+        Example:<br>
+        <img src="./dd.png"><br>
+        <br>
+    </span>
+        <br>
+    <span style="color:red">*************************************************************************************************************************************************</span>
+</p>
+</div>
+
+
+
+
+
+<div style="margin:100px">
+    <p style="font-size:larger">
+        <h3>3. What are semantic tags?</h3>
+        <br>
+        <span style="color:blue">
+            Semantics tags in HTML are special markup tags that are used to describe the meaning and<br>
+            structure of the content within a web page. These tags are designed to provide more <br>
+            context and information to both web browsers and search engines about the purpose of the<br>
+            content, which can help improve accessibility, search engine optimization, and the overall<br>
+            user experience.
+            <br>
+            Some examples of semantic tags in HTML5 include:<br>
+            <br>
+        </span>
+
+        <span>
+                <span>&lt;</span><span>header</span><span>&gt;</span> : Used to define the header of a page or section.<br>
+                <span>&lt;</span><span>nav</span><span>&gt;</span> : Used to define a navigation menu.<br>
+                <span>&lt;</span><span>article</span><span>&gt;</span> : Used to define an article or section of content within a page.<br>
+                <span>&lt;</span><span>section</span><span>&gt;</span> : Used to define a section of content within a page.<br>
+                <span>&lt;</span><span>aside</span><span>&gt;</span> : Used to define content that is tangentially related to the main content, <br>
+                such as a sidebar or callout box.<br>
+                <span>&lt;</span><span>footer</span><span>&gt;</span> : Used to define the footer of a page or section.<br>
+        <br>
+        <span style="color:red">*********************************************************************************************************************</span>
+        </span>
+</p>
+</div>
+
+
+
+
+
+<div style="margin:100px">
+           <p style="font-size:larger">
+           <h3>4. Write code to create an ordered list with roman numbers.</h3>
+           <br>
+          <span style="color:blue">
+          Ordered list in html is used to create list elements which are following some<br>
+          specific order. Its default type is number or &quot;1&quot;. Other types which it supports<br>
+          are &quot;I&quot; , &quot;i&quot;, &quot;A&quot;, &quot;a&quot;<br>
+          <br>
+         </span>
+          </p> 
+
+            <div>
+            <h4>Code:-</h4><br>
+                  <span class="m_tagnamecolor" style="color:brown;">
+                  <span>&lt;</span>ol  
+                  <span style="color:red">type</span>
+                  <span style="color:black">=</span>
+                  <span style="color:blue">&quot;I&quot;</span>
+                  <span>&gt;</span>
+            <br>
+                  <span>&lt;</span>li<span>&gt;</span>
+                  <span style="color:black">Apple</span>
+                  <span>&lt;</span>/li<span>&gt;</span><br>
+
+                  <span>&lt;</span>li<span>&gt;</span>
+                  <span style="color:black">Orange</span>
+                  <span>&lt;</span>/li<span>&gt;</span><br>
+
+                  <span>&lt;</span>li<span>&gt;</span>
+                  <span style="color:black">Banana</span>
+                  <span>&lt;</span>/li<span>&gt;</span>
+            <br>
+                  <span>&lt;</span>/ol <span>&gt;</span>
+            <br>
+            </div>
+
+             <p>
+                <h4>Output:-</h4>
+             <br>
+                  <ol type="I">
+                  <li> Apple </li>
+                  <li> Orange </li>
+                  <li> Banana </li>
+                  </ol>
+            <br>
+            <span style="color:red">*********************************************************************************************************************************</span>
+            </p>    
+<div>
+
+
+
+
+
+
+    <p style="font-size:larger">
+    <h3>5. Write code to create an unordered list with a circle.</h3>
+    <br>
+    <span style="color:blue">
+    Unordered list in html is used to create list elements which are random in<br>
+    fashion. Its default type is bullet or &quot;disc&quot;. Other types which it supports are<br>
+    &quot;circle&quot; , &quot;square&quot;, &quot;none&quot;.
+    </span>
+    </p>
+
+    <br>
+
+
+    <h4>Code:-</h4><br>
+    <br>
+    <span style="color:Brown">
+    <span>&lt;</span>ul 
+    <span style="color:red">type</span>
+    <span style="color:black">=</span>
+    <span style="color:blue">&quot;circle&quot;</span><span>&gt;</span>
+    </span><br>
+
+
+    <span style="color:Brown">
+    <span>&lt;</span>li<span>&gt;</span>
+    <span style="color:black">First</span>
+    <span>&lt;</span>/li<span>&gt;</span><br>
+
+    <span>&lt;</span>li<span>&gt;</span>
+    <span style="color:black">Second</span>
+    <span>&lt;</span>/li<span>&gt;</span><br>
+
+    <span>&lt;</span>li<span>&gt;</span>
+    <span style="color:black">Third</span>
+    <span>&lt;</span>/li<span>&gt;</span>
+    <br>
+    <span>&lt;</span>/ul<span>&gt;</span>
+    </span>
+
+
+    <h4>Output:-</h4>
+    <br>
+    <ul type="circle">
+    <li> First </li>
+    <li> Second </li>
+    <li> Third </li>
+    </ul>
+    <br>
+    <span style="color:red">****************************************************************************************************************************************</span>
+
+
+
+
+
+
+    <div>
+        <p style="font-size:larger">
+           <h3>
+           6. Write code to create a nested list that contains ordered list(numeric) <br>
+           first then an unordered list(disc) then again one unordered list(square)<br>
+           </h3>   
+           
+        <br>
+        <br>
+        Here's is the code for the nested list -
+        </p>
+
+        <br>
+
+        <p>
+            <h4>Code:-</h4>
+            <br>
+            <span>
+                <span>&lt;</span>ol<span>&gt;</span><br>
+                <span>&lt;</span>li<span>&gt;</span>NumericList1<span>&lt;</span>/li<span>&gt;</span><br>
+                <span>&lt;</span>li<span>&gt;</span>NumericList2<span>&lt;</span>/li<span>&gt;</span><br>
+                <span>&lt;</span>li<span>&gt;</span>NumericList3<span>&lt;</span>/li<span>&gt;</span><br>
+
+                <span>&lt;</span>ul style <span>=&quot;list-style-type: disc;&quot;</span>  <span>&gt;</span><br>
+                <span>&lt;</span>li<span>&gt;</span>DiscList1<span>&lt;</span>/li<span>&gt;</span><br>
+                <span>&lt;</span>li<span>&gt;</span>DiscList2<span>&lt;</span>/li<span>&gt;</span><br>
+                <span>&lt;</span>li<span>&gt;</span>DiscList3<span>&lt;</span>/li<span>&gt;</span><br>
+                <span>&lt;</span>/ul<span>&gt;</span><br>
+
+                <span>&lt;</span>ul style<span>=&quot;list-style-type: square;&quot;</span><span>&gt;</span><br>
+                <span>&lt;</span>li<span>&gt;</span>SquareList1<span>&lt;</span>/li<span>&gt;</span><br>
+                <span>&lt;</span>li<span>&gt;</span>SquareList2<span>&lt;</span>/li<span>&gt;</span><br>
+                <span>&lt;</span>li<span>&gt;</span>SquareList3<span>&lt;</span>/li<span>&gt;</span><br>
+                <span>&lt;</span>/ul<span>&gt;</span><br>
+            </span>
+        </p>
+            <ol>
+            <li>NumericList1</li>
+            <li>NumericList2</li>
+            <li>NumericList3</li>
+              <ul type="disc">
+              <li>DiscList1</li>
+              <li>DiscList2</li>
+              <li>DiscList3</li>
+              </ul>
+              <ul type="square">
+              <li>SquareList1</li>
+              <li>SquareList2</li>
+              <li>SquareList3</li>
+              </ul>
+          </ol>
+        <span style="color:red">***************************************************************************************************</span>
+    </div>
+
+
+
+
+
+
+
+
+
+    <p style="font-size:larger">
+    <h3>7. Write a code to create a link to <a href="https://www.google.com/url?q=https://www.prepbytes.com&amp;source=gmail-html&amp;ust=1679680721152000&amp;usg=AOvVaw1YW8SVeRUgdzIejClIvKtJ" 
+        style="color:royalblue" target="_blank" rel="noreferrer">https://www.prepbytes.com</a></h3>
+        <br>
+
+        <span style="color:blue">
+        To create links in HTML, we use anchor tags. These tags can be used to redirect<br>
+        to a new HTML page and also to a web page. So in href attribute we can give<br>
+        the web page link or we can give the location of the html file we want to load.<br>
+        <br>
+        target = &quot;_blank&quot; you can give when you want to open that page in a new tab.
+        </span>
+
+        </p>
+        <h4>Code:-</h4>
+        <br>
+        <span>
+            <span>&lt;</span>h2<span>&gt;</span>
+            <span>Link to go to Prepbytes</span>
+            <span>&lt;</span>/h2<span>&gt;</span>
+        </span><br>
+
+        <span>
+        <span>&lt;</span>a
+        <span style="color:royalblue">href=&quot;<a href="https://www.google.com/url?q=https://www.prepbytes.com&amp;source=gmail-html&amp;ust=1679680721152000&amp;usg=AOvVaw1YW8SVeRUgdzIejClIvKtJ"
+             target="_blank" rel="noreferrer">https://www.prepbytes.<wbr>com</a>&quot;</span>
+        <span>&gt;</span>
+        <span>Prepbytes</span>
+        <span>&lt;</span>/a<span>&gt;</span>
+        </span><br>
+        <span>
+
+        <span>&lt;</span>a
+        <span style="color:royalblue">href=&quot;<a href="https://www.google.com/url?q=https://www.prepbytes.com&amp;source=gmail-html&amp;ust=1679680721152000&amp;usg=AOvVaw1YW8SVeRUgdzIejClIvKtJ" 
+            target="_blank" rel="noreferrer">https://www.prepbytes.<wbr>com</a>&quot;</span>
+        <span>target=&quot;_blank&quot;</span>
+        <span>&gt;</span>
+        <span>Prepbytes</span>
+        <span>&lt;</span>/a<span>&gt;</span>
+        </span><br>
+        <br>
+        <h4>Output:-</h4>
+        <br>
+        <br>
+        <h2>Link to go to Prepbytes</h2><a href="https://www.google.com/url?q=https://www.prepbytes.com&amp;source=gmail-html&amp;ust=1679680721152000&amp;usg=AOvVaw1YW8SVeRUgdzIejClIvKtJ" 
+        style="font-size:larger" target="_blank" rel="noreferrer">Prepbytes</a><br><
+    
+    <span style="color:red">******************************************************************************************************************************************</span>
+
+
+
+
+
+   
+
+
+    
+    
+    
+    
+
+
